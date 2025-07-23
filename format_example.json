@@ -1,0 +1,61 @@
+{
+    "messages": [
+        {
+            "content": [
+                {
+                    "index": None, "text": "Who is the author of this book?\n", "type": "text"
+                },
+                {"index": 0, "text": None, "type": "image"
+                }
+            ], "role": "user"
+        },
+        {"content": [
+                {"index": None, "text": "Gretchen Owocki", "type": "text"
+                }
+            ], "role": "assistant"
+        },
+        {"content": [
+                {"index": None, "text": "What is the title of this book?", "type": "text"
+                }
+            ], "role": "user"
+        },
+        {"content": [
+                {"index": None, "text": "The Common Core Lesson Book, K-5: Working with Increasingly Complex Literature, Informational Text, and Foundational Reading Skills", "type": "text"
+                }
+            ], "role": "assistant"
+        },
+        {"content": [
+                {"index": None, "text": "What type of book is this?", "type": "text"
+                }
+            ], "role": "user"
+        },
+        {"content": [
+                {"index": None, "text": "Education & Teaching", "type": "text"
+                }
+            ], "role": "assistant"
+        },
+        {"content": [
+                {"index": None, "text": "Is this a pedagogy book?", "type": "text"
+                }
+            ], "role": "user"
+        },
+        {"content": [
+                {"index": None, "text": "Yes", "type": "text"
+                }
+            ], "role": "assistant"
+        },
+        {"content": [
+                {"index": None, "text": "Is this a historical book?", "type": "text"
+                }
+            ], "role": "user"
+        },
+        {"content": [
+                {"index": None, "text": "No", "type": "text"
+                }
+            ], "role": "assistant"
+        }
+    ],
+    "images": [
+        <PIL.JpegImagePlugin.JpegImageFile image mode=RGB size=387x500 at 0x7FA749C0B4C0>
+    ]
+}
