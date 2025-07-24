@@ -36,7 +36,7 @@ For meta-llama/Llama-3.2-11B-Vision-Instruct, use: (requires transformers>=4.45.
 """
 
 import torch
-from datasets import load_dataset
+from datasets import load_dataset, load_from_disk
 from transformers import AutoModelForVision2Seq, AutoProcessor, LlavaForConditionalGeneration
 
 from trl import (
@@ -59,6 +59,7 @@ if __name__ == "__main__":
     training_args.gradient_checkpointing_kwargs = dict(use_reentrant=False)
     training_args.remove_unused_columns = False
     training_args.dataset_kwargs = {"skip_prepare_dataset": True}
+    # print(script_args, training_args, model_args)
 
     ################
     # Model, Tokenizer & Processor
@@ -111,7 +112,13 @@ if __name__ == "__main__":
     ################
     # Dataset
     ################
-    dataset = load_dataset(script_args.dataset_name, name=script_args.dataset_config)
+    # dataset = load_dataset(script_args.dataset_name, name=script_args.dataset_config)
+    dataset = load_from_disk("/mnt/nas2/jeochris/hf_chat_mm")
+    
+    # print(dataset[0])
+    # print(len(dataset['train']))
+    # raise
+    # raise
 
     lora_config = LoraConfig(
         r=16,
@@ -139,6 +146,6 @@ if __name__ == "__main__":
     # Save and push to hub
     trainer.save_model(training_args.output_dir)
     if training_args.push_to_hub:
-        trainer.push_to_hub(dataset_name=script_args.dataset_name)
+        trainer.push_to_hub(dataset_name="hf_chat_mm")
         if trainer.accelerator.is_main_process:
             processor.push_to_hub(training_args.hub_model_id)

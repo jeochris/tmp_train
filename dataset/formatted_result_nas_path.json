@@ -1,0 +1,104 @@
+[
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": [
+                    {
+                        "type": "text",
+                        "text": "What is the main category of facility?",
+                        "index": null
+                    },
+                    {
+                        "type": "image",
+                        "index": 0,
+                        "text": null
+                    }
+                ]
+            },
+            {
+                "role": "assistant",
+                "content": [
+                    {
+                        "type": "text",
+                        "text": "숙소 실내 시설",
+                        "index": null
+                    }
+                ]
+            }
+        ],
+        "images": [
+            "/data/nas-1/images_10000_resized/img_sample1.jpg"
+        ],
+        "index": 0,
+        "id": 1
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": [
+                    {
+                        "type": "text",
+                        "text": "What is the main category of facility?",
+                        "index": null
+                    },
+                    {
+                        "type": "image",
+                        "index": 0,
+                        "text": null
+                    }
+                ]
+            },
+            {
+                "role": "assistant",
+                "content": [
+                    {
+                        "type": "text",
+                        "text": "무관 이미지",
+                        "index": null
+                    }
+                ]
+            }
+        ],
+        "images": [
+            "/data/nas-1/images_10000_resized/img_sample2.jpg"
+        ],
+        "index": 1,
+        "id": 2
+    },
+    {
+        "messages": [
+            {
+                "role": "user",
+                "content": [
+                    {
+                        "type": "text",
+                        "text": "What is the main category of facility?",
+                        "index": null
+                    },
+                    {
+                        "type": "image",
+                        "index": 0,
+                        "text": null
+                    }
+                ]
+            },
+            {
+                "role": "assistant",
+                "content": [
+                    {
+                        "type": "text",
+                        "text": "숙소 실내 시설",
+                        "index": null
+                    }
+                ]
+            }
+        ],
+        "images": [
+            "/data/nas-1/images_10000_resized/img_sample3.jpg"
+        ],
+        "index": 2,
+        "id": 3
+    }
+]
